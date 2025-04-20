@@ -9,7 +9,7 @@ import numpy as np
 from gensim.models import KeyedVectors
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-dataset_dir = "Data/"
+data_dir = "Data/"
 
 
 def load_predefined_vectors(filepath):
@@ -61,11 +61,11 @@ def vsm(idx2term, term_doc_mtx, pb5_vec, word_embb):
 
 
 def personality_assessment():
-    pb5_vec = load_predefined_vectors(dataset_dir+'pb5.txt')
+    pb5_vec = load_predefined_vectors(data_dir+'Personality/pb5.txt')
     corpus = []
     users = []
     register_dialect('tab', delimiter='\t')
-    df = pd.read_csv(dataset_dir + 'tweets_users.csv', index_col=False, header=None)
+    df = pd.read_csv(data_dir + 'tweets_users.csv', index_col=False, header=None)
     df.columns = ["user_id", "user_text"]
     for i in range(len(df)):
             uid = df.loc[i, "user_id"]
@@ -77,9 +77,9 @@ def personality_assessment():
     idx2term = vectorizer.get_feature_names_out()
     print(' -- Term-Doc Matrix Created --')
 
-    word_embb = KeyedVectors.load_word2vec_format(dataset_dir+"GoogleNews-vectors-negative300.bin.gz", binary=True)
+    word_embb = KeyedVectors.load_word2vec_format("GoogleNews-vectors-negative300.bin.gz", binary=True)
     print(' -- Word Embeddings loaded --')
 
     x = vsm(idx2term, term_doc_mtx, pb5_vec, word_embb)
     np.nan_to_num(x, copy=False)
-    np.save(dataset_dir + "personality_scores", x)
+    np.save(data_dir + "Personality/personality_scores", x)
