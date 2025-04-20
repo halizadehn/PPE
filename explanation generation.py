@@ -2,7 +2,7 @@ import os
 import statistics
 import pandas as pd
 data_dir = "Data/"
-rec_dir = "data/recommendations/"
+rec_dir = "Data/recommendations/"
 
 personality_df = pd.read_csv(data_dir + "Personality/users_personality.csv", index_col=False)
 
@@ -81,27 +81,16 @@ def commitment_explanation_generation(user_id, movie_id, persuasiveness_degree):
     return None, 0
 
 
-def authority_explanation_generation(user_id, movie_id, persuade_weight):
+def authority_explanation_generation(user_id, movie_id, persuasiveness_degree):
+    oscar_df = pd.read_csv(data_dir + 'IMDB/the_oscar_award.csv', index_col=False)
     movie_name = get_movie_name(movie_id)
     result = oscar_df.query('film == "%s"' % movie_name)
     if result.empty:
-        return -1, -1
-    result = result.reset_index()
-    for i in range(len(result)):
-        if not result.loc[i, "winner"]:
-            result.drop(i, axis=0, inplace=True)
-    if result.empty:
-        return -1, -1
-    return len(result), persuade_weight
-
-
-def get_movie_name(movie_id):
-    mid = convert_id_to_imdb_id(movie_id)
-    result = basics_df.query('tconst == "%s"' % mid)
-    if result.empty :
-        return "-1"
-    movie_name = result["primaryTitle"].tolist()[0]
-    return movie_name
+        return None, 0
+    winners = result[result["winner"] == True]
+    if winners.empty:
+        return None, 0
+    return len(winners), persuasiveness_degree
 
 
 def convert_id_to_imdb_id(id):
