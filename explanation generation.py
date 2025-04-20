@@ -50,7 +50,6 @@ def socialproof_explanation_generation(user_id, movie_id, persuasiveness_degree)
 def commitment_explanation_generation(user_id, movie_id, persuasiveness_degree):
     movie_genres = get_genres(movie_id)
     user_genres = get_user_interested_genres(user_id)
-
     num_movie_genres = len(movie_genres)
     num_user_genres = len(user_genres)
     total_overlap_score = 0
@@ -62,76 +61,24 @@ def commitment_explanation_generation(user_id, movie_id, persuasiveness_degree):
         total_overlap_score += matches / num_user_genres
     average_score = total_overlap_score / num_movie_genres
     average_score = round(average_score, 2)
-    
     if average_score >= 0.3:
         return average_score, persuasiveness_degree
 
     director = get_director_movie(movie_id)
-    if director:
-        user_directors = get_user_interested_directors(user_id)
-        sum = user_directors.count(director)
-        sum = sum / len(user_directors)
-        sum = float("{:.2f}".format(sum))
-        # print(sum)
-        if sum > 0.3:
-            return sum, persuade_weight
+    user_directors = get_user_interested_directors(user_id)
+    match_count = user_directors.count(director)
+    match_ratio = round(match_count / len(user_directors), 2)
+    if match_ratio > 0.3:
+        return match_ratio, persuasiveness_degree
 
     actors = get_actors_movie(movie_id)
-    if actors:
-        user_actors = get_user_interested_actors(user_id)
-        actors_weights = []
-        for actor in actors:
-            actors_weights.append(user_actors.count(actor))
-        x = max(actors_weights)
-        x = x / len(user_actors)
-        x = float("{:.2f}".format(x))
-        # print(x)
-        if x > 0.3:
-            return x, persuade_weight
+    user_actors = get_user_interested_actors(user_id)
+    actor_counts = [user_actors.count(actor) for actor in actors]
+    max_ratio = round(max(actor_counts) / len(user_actors), 2)
+    if max_ratio > 0.3:
+        return max_ratio, persuade_weight
 
-    return -1, -1
-
-
-def get_user_interested_genres(user_id):
-    result = user_interested_genres_df.query('user_id == ' + str(user_id))
-    interested_genres = eval(result["interested_genres"].values[0])
-    return interested_genres
-
-
-def get_user_interested_directors(user_id):
-    result = user_interested_directors_df.query('user_id == ' + str(user_id))
-    interested_directors = eval(result["interested_directors"].values[0])
-    return interested_directors
-
-
-def get_user_interested_actors(user_id):
-    result = user_interested_actors_df.query('user_id == ' + str(user_id))
-    interested_actors = eval(result["interested_actors"].values[0])
-    return interested_actors
-
-
-def get_genre_movie(movie_id):
-    result = features_gold_movies.query('movie_id == ' + str(movie_id))
-    if result.empty:
-        return "-1"
-    genres = result["genres"].tolist()[0]
-    return genres.split(" ")
-
-
-def get_actors_movie(movie_id):
-    result = features_gold_movies.query('movie_id == ' + str(movie_id))
-    if result.empty:
-        return "-1"
-    actors = eval(result["actor"].tolist()[0])
-    return actors
-
-
-def get_director_movie(movie_id):
-    result = features_gold_movies.query('movie_id == ' + str(movie_id))
-    if result.empty:
-        return "-1"
-    director = eval(result["director"].tolist()[0])
-    return director
+    return None, 0
 
 
 def authority_explanation_generation(user_id, movie_id, persuade_weight):
