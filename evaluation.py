@@ -1,9 +1,6 @@
-from sklearn.metrics import ndcg_score, dcg_score
 import os
 import numpy as np
 import pandas as pd
-data_dir = "Data/"
-rec_dir = "Data/Recommendations/"
 
 
 def fidelity(K, explanation_file):
