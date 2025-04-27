@@ -24,13 +24,13 @@
 This model combines various relationships within the knowledge graph to understand the intent behind interactions between users and items. The code is available at https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network.
 
 - **`KGAT`**  
-This model build a collaborative knowledge graph and employs an attentive aggregation mechanism to generate representations for users and items.
+This model build a collaborative knowledge graph and employs an attentive aggregation mechanism to generate representations for users and items. The code is available at https://github.com/xiangwang1223/knowledge_graph_attention_network.
 
 - **`CKE`**  
-This approach combines a collaborative filter (CF) module with knowledge embeddings of items derived from TransR.
+This approach combines a collaborative filter (CF) module with knowledge embeddings of items derived from TransR. 
 
 - **`NFM`**  
-This method is a state-of-the-art neural network-based factorization model.
+This method is a state-of-the-art neural network-based factorization model. The code is available at https://github.com/hexiangnan/neural_factorization_machine.
 
 - **`BPRMF`**  
 Bayesian Personalized Ranking is a widely used collaborative filtering method that only considers the user-item interactions, without utilizing any external knowledge about the users or items.
