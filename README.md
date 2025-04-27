@@ -53,3 +53,4 @@
 
 <img src="images/fidelity across different K.JPG" width="800"/>
 
+</p>
