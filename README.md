@@ -47,7 +47,7 @@
 <p align="justify"> To assess the impact of the re-ordering approach on the upper segments of the recommendation list, in addition to the results reported in the paper for K=10, we present results for K=3 and K=5 in Figure 1. A careful examination of these figures reveals consistent improvements, aligning with the findings for K=10. Specifically, for K=3, the re-ordering approach led to an average NDCG improvement of approximately 13.36% and an average MRR improvement of around 14.72%. For K=5, the improvements were slightly smaller but still notable, with an average NDCG improvement of about 8.22% and an average MRR improvement of approximately 11.54%.
   
 </p>
-![test](images/re-ordering impact across different K.JPG](https://github.com/halizadehn/PPE/blob/main/images/re-ordering%20impact%20across%20different%20K.JPG)
+![test](images/re-ordering impact across different K.JPG)
 
 *Figure 1: Improvement percentages in RS utility by using the proposed recommendation re-ordering approach*
 
