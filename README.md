@@ -48,7 +48,7 @@
   
 </p>
 <img src="images/re-ordering impact across different K.JPG" width="700"/>
-Figure 1: Improvement percentages in RS utility by using the proposed recommendation re-ordering approach
+<sub><i>Figure 1: Impact of the proposed re-ranking approach on recommendation utility</i></sub>
 
 
 
