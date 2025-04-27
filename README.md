@@ -40,10 +40,15 @@
 - **explanation_baselines.py:** This file implements three distinct baselines for explanation generation: rating-based, feature-based, and award-based. Each approach leverages a unique method to generate explanations for recommended items, offering diverse strategies for comparison and evaluation.
 
 - **metrics.py:** This file implements evaluation metrics, including model fidelity. Additionally, it introduces a new metric, persuasion-based fidelity, which takes into account not only the presence of an explanation but also its persuasive effectiveness in influencing users.
-  
+
 </p>
 
-## Evaluation
-<p align="justify"> insert figures and tables for different K
+## Results
+<p align="justify"> To assess the impact of the re-ordering approach on the upper segments of the recommendation list, in addition to the results reported in the paper for K=10, we present results for K=3 and K=5 in Figure 1. A careful examination of these figures reveals consistent improvements, aligning with the findings for K=10. Specifically, for K=3, the re-ordering approach led to an average NDCG improvement of approximately **13.36%** and an average MRR improvement of around **14.72%**. For K=5, the improvements were slightly smaller but still notable, with an average NDCG improvement of about **8.22%** and an average MRR improvement of approximately **11.54%**.
+
+![Figure 1: Impact of Re-ordering on NDCG and MRR](re-ordering impact across different K.JPG)
+
+*Figure 1: Improvement percentages in RS utility by using the proposed recommendation
+re-ordering approach*
 
 </p>
