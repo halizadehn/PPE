@@ -8,9 +8,10 @@
 
 - **users.dat:** maps internal user IDs to their actual Twitter IDs, enabling further user-level analysis such as personality trait extraction from tweets.
 
-- **items.dat:** Contains information about the rated items (i.e., movies), including metadata such as genres.
+- **items.dat:** contains information about the rated items (i.e., movies), including metadata such as genres.
 
-- **ratings.dat:** Stores the extracted ratings in the format: user_id, movie_id, rating, rating_timestamp. The ratings are scaled from 0 to 10.
+- **ratings.dat:** stores the extracted ratings in the format: user_id, movie_id, rating, rating_timestamp. The ratings are scaled from 0 to 10.
+  
 </p>
 
 ## Recommednation models 
