@@ -13,15 +13,14 @@
   Contains information about the rated items (i.e., movies), including metadata such as genres.
 
 - **`ratings.dat`**  
-  Stores the extracted ratings in the format: `user_id, movie_id, rating, rating_timestamp`.  The ratings are scaled from 0 to 10.
+  Stores the extracted ratings in the format: user_id, movie_id, rating, rating_timestamp.  The ratings are scaled from 0 to 10.
 </p>
 
 ## Recommednation models 
 
 <p align="justify"> To demonstrate the model-agnostic nature of our explanation generation approach, we applied five RS baselines included two factorization models (Bayesian Personalized Ranking for Matrix Factorization (BPRMF) and Neural Factorization Machines (NFM)) and three knowledge-aware models (Collaborative Knowledge-based Embedding (CKE), Knowledge Graph Attention Network (KGAT) and Knowledge Graph-based Intent Network (KGIN)). </p>
   
-- **`KGIN`**  
-<p align="justify"> This model combines various relationships within the knowledge graph to understand the intent behind interactions between users and items. The code is available at https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network.
+- **KGIN:**  <p align="justify"> This model combines various relationships within the knowledge graph to understand the intent behind interactions between users and items. The code is available at https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network.
 </p>
 
 - **`KGAT`**  
