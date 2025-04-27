@@ -32,7 +32,7 @@
 
 ## Code Structure
 <p align="justify"> This section provides an overview of the key files in the repository and their respective roles.</p>
-  
+  <p align="justify">
 - **personality_assessment.py:** This file implements the assessment of users' personality traits based on their textual content, using the [vectorial semantics approach](https://www.nature.com/articles/srep04761) proposed by Neuman and Cohen. In this approach, a set of vectors is created using a limited number of adjectives that, based on theoretical and/or empirical knowledge, reflect the core dimensions of personality traits. By leveraging context-free word embeddings, the semantic similarity between these vectors and the users' textual data (i.e., tweets) is computed. These similarity scores are then used to quantify the presence of specific personality traits in the text.
 
 - **persuasive_explanation_generation.py:** This file implements the generation of persuasive explanations, as described in Algorithm 1 of the paper. The approach focuses on creating explanations that align with the most persuasive principles found in the user's persuasion profile.
