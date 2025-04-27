@@ -18,20 +18,24 @@
 
 ## Recommednation models 
 
-<p align="justify"> To demonstrate the model-agnostic nature of our explanation generation approach, we applied five RS baselines included two factorization models (Bayesian Personalized Ranking for Matrix Factorization (BPRMF) and Neural Factorization Machines (NFM)) and three knowledge-aware models (Collaborative Knowledge-based Embedding (CKE), Knowledge Graph Attention Network (KGAT) and Knowledge Graph-based Intent Network (KGIN)). 
+<p align="justify"> To demonstrate the model-agnostic nature of our explanation generation approach, we applied five RS baselines included two factorization models (Bayesian Personalized Ranking for Matrix Factorization (BPRMF) and Neural Factorization Machines (NFM)) and three knowledge-aware models (Collaborative Knowledge-based Embedding (CKE), Knowledge Graph Attention Network (KGAT) and Knowledge Graph-based Intent Network (KGIN)). </p>
   
 - **`KGIN`**  
-This model combines various relationships within the knowledge graph to understand the intent behind interactions between users and items. The code is available at https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network.
+<p align="justify"> This model combines various relationships within the knowledge graph to understand the intent behind interactions between users and items. The code is available at https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network.
+</p>
 
 - **`KGAT`**  
-This model build a collaborative knowledge graph and employs an attentive aggregation mechanism to generate representations for users and items. The code is available at https://github.com/xiangwang1223/knowledge_graph_attention_network.
+<p align="justify"> This model build a collaborative knowledge graph and employs an attentive aggregation mechanism to generate representations for users and items. The code is available at https://github.com/xiangwang1223/knowledge_graph_attention_network.
+</p>
 
 - **`CKE`**  
-This approach combines a collaborative filter (CF) module with knowledge embeddings of items derived from TransR. 
+<p align="justify"> This approach combines a collaborative filter (CF) module with knowledge embeddings of items derived from TransR. 
+</p>
 
 - **`NFM`**  
-This method is a state-of-the-art neural network-based factorization model. The code is available at https://github.com/hexiangnan/neural_factorization_machine.
+<p align="justify"> This method is a state-of-the-art neural network-based factorization model. The code is available at https://github.com/hexiangnan/neural_factorization_machine. 
+</p>
 
 - **`BPRMF`**  
-Bayesian Personalized Ranking is a widely used collaborative filtering method that only considers the user-item interactions, without utilizing any external knowledge about the users or items.
+<p align="justify"> Bayesian Personalized Ranking is a widely used collaborative filtering method that only considers the user-item interactions, without utilizing any external knowledge about the users or items. 
 </p>
