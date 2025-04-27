@@ -31,16 +31,15 @@
 </p>
 
 ## Code Structure
-<p align="justify"> This section outlines the main files in the repository and their specific roles. 
-
+<p align="justify"> This section provides an overview of the key files in the repository and their respective roles.
+  
 - **personality_assessment.py:** This file implements the assessment of users' personality traits based on their textual content, using the [vectorial semantics approach](https://www.nature.com/articles/srep04761) proposed by Neuman and Cohen. In this approach, a set of vectors is created using a limited number of adjectives that, based on theoretical and/or empirical knowledge, reflect the core dimensions of personality traits. By leveraging context-free word embeddings, the semantic similarity between these vectors and the users' textual data (i.e., tweets) is computed. These similarity scores are then used to quantify the presence of specific personality traits in the text.
 
-
-- **persuasive_explanation_generation.py** This approach.
+- **persuasive_explanation_generation.py:** This approach.
  
-- **explanation_baselines.py** This approach.
+- **explanation_baselines.py:** This file implements three distinct baselines for explanation generation: rating-based, feature-based, and award-based. Each approach leverages a unique method to generate explanations for recommended items, offering diverse strategies for comparison and evaluation.
 
-- **metrics.py** This approach.
+- **metrics.py:** This file implements evaluation metrics, including model fidelity. Additionally, it introduces a new metric, persuasion-based fidelity, which takes into account not only the presence of an explanation but also its persuasive effectiveness in influencing users.
   
 </p>
 
