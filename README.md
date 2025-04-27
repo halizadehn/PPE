@@ -4,4 +4,14 @@
 
 ## Dataset 
 
-<p align="justify"> We use the publicly available <a href="https://github.com/sidooms/MovieTweetings">MovieTweetings</a> dataset, which uniquely links users to their Twitter IDs, allowing the extraction of personality traits through tweet analysis.  </p>
+<p align="justify"> We use the publicly available <a href="https://github.com/sidooms/MovieTweetings">MovieTweetings</a> dataset. The dataset consists of three main files:
+
+- **`users.dat`**  
+  Maps internal user IDs to their actual Twitter IDs, enabling further user-level analysis such as personality trait extraction from tweets.
+
+- **`items.dat`**  
+  Contains information about the rated items (i.e., movies), including metadata such as genres.
+
+- **`ratings.dat`**  
+  Stores the extracted ratings in the format: `user_id, movie_id, rating, rating_timestamp`.  The ratings are scaled from **0 to 10**.
+</p>
