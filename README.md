@@ -34,3 +34,4 @@ This method is a state-of-the-art neural network-based factorization model. The 
 
 - **`BPRMF`**  
 Bayesian Personalized Ranking is a widely used collaborative filtering method that only considers the user-item interactions, without utilizing any external knowledge about the users or items.
+</p>
