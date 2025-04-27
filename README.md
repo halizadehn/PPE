@@ -49,7 +49,7 @@
 <img src="images/re-ordering impact across different K.JPG" width="700"/>
 <p style="font-size:8px;"><strong><em>Figure 1: Impact of the proposed re-ranking approach on recommendation utility</em></strong></p>
 
-hello
+<p align="justify"> Table 1 and Table 2 present the model fidelity and persuasion-based fidelity for the top-3 and top-5 recommendations, evaluated across various explanation styles. The results in these tables align consistently with those for k=10, as reported in the paper, thereby demonstrating the generalizability of the observed findings across different recommendation sets.
 
 <img src="images/fidelity across different K.JPG" width="800"/>
 
