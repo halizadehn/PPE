@@ -6,14 +6,11 @@
 
 <p align="justify"> We use the publicly available <a href="https://github.com/sidooms/MovieTweetings">MovieTweetings</a> dataset. The dataset consists of three main files:
 
-- **`users.dat`**  
-  Maps internal user IDs to their actual Twitter IDs, enabling further user-level analysis such as personality trait extraction from tweets.
+- **users.dat:** maps internal user IDs to their actual Twitter IDs, enabling further user-level analysis such as personality trait extraction from tweets.
 
-- **`items.dat`**  
-  Contains information about the rated items (i.e., movies), including metadata such as genres.
+- **items.dat:** Contains information about the rated items (i.e., movies), including metadata such as genres.
 
-- **`ratings.dat`**  
-  Stores the extracted ratings in the format: user_id, movie_id, rating, rating_timestamp.  The ratings are scaled from 0 to 10.
+- **ratings.dat:** Stores the extracted ratings in the format: user_id, movie_id, rating, rating_timestamp. The ratings are scaled from 0 to 10.
 </p>
 
 ## Recommednation models 
@@ -29,4 +26,23 @@
 - **NFM** This method is a state-of-the-art neural network-based factorization model. The code is available at https://github.com/hexiangnan/neural_factorization_machine. 
 
 - **BPRMF** Bayesian Personalized Ranking is a widely used collaborative filtering method that only considers the user-item interactions, without utilizing any external knowledge about the users or items. 
+
 </p>
+
+## Code Structure
+<p align="justify"> This section outlines the main files in the repository and their specific roles. 
+
+- **personality_assessment.py** This approach.
+
+- **persuasive_explanation_generation.py** This approach.
+ 
+- **explanation_baselines.py** This approach.
+
+- **metrics.py** This approach.
+  
+</p>
+
+## Evaluation
+insert figures and tables for different K
+
+
