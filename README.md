@@ -6,7 +6,7 @@
 
 <p align="justify"> We use the publicly available <a href="https://github.com/sidooms/MovieTweetings">MovieTweetings</a> dataset. The dataset consists of three main files:
 
-- **users.dat:** maps internal user IDs to their actual Twitter IDs, enabling further user-level analysis such as personality trait extraction from tweets.
+- **users.dat:** maps internal user IDs to their Twitter IDs, enabling further user-level analysis such as personality trait extraction from tweets.
 
 - **items.dat:** contains information about the rated items (i.e., movies), including metadata such as genres.
 
