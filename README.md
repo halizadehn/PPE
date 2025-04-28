@@ -27,10 +27,10 @@
 - **NFM** This method is a state-of-the-art neural network-based factorization model. The code is available at <a href="https://github.com/hexiangnan/neural_factorization_machine">https://github.com/hexiangnan/neural_factorization_machine</a>. 
 
 - **BPRMF** Bayesian Personalized Ranking is a widely used collaborative filtering method that only considers the user-item interactions, without utilizing any external knowledge about the users or items. 
-
+</p>
+</div>
 
 ## Code Structure
-
 This section provides an overview of the key files in the repository and their respective roles.
 
 - **personality_assessment.py:** This file implements the assessment of users' personality traits based on their textual content, using the <a href="https://www.nature.com/articles/srep04761">vectorial semantics approach</a> proposed by Neuman and Cohen. In this approach, a set of vectors is created using a limited number of adjectives that, based on theoretical and/or empirical knowledge, reflect the core dimensions of personality traits. By leveraging context-free word embeddings, the semantic similarity between these vectors and the users' textual data (i.e., tweets) is computed. These similarity scores are then used to quantify the presence of specific personality traits in the text.
@@ -49,7 +49,7 @@ This section provides an overview of the key files in the repository and their r
 <p style="font-size:8px;"><strong><em>Figure 1: Impact of the proposed re-ranking approach on recommendation utility</em></strong></p>
 
 <p align="justify"> Table 1 and Table 2 present the model fidelity and persuasion-based fidelity for the top-3 and top-5 recommendations, evaluated across various explanation styles. The results in these tables align consistently with those for k=10, as reported in the paper, thereby demonstrating the generalizability of the observed findings across different recommendation sets.
-  </p>
-  <img src="images/fidelity across different K.JPG" width="800"/>
+</p>
+<img src="images/fidelity across different K.JPG" width="800"/>
 
 
