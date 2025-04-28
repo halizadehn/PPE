@@ -18,7 +18,7 @@
 
 <p align="justify"> To demonstrate the model-agnostic nature of our explanation generation approach, we applied five RS baselines included two factorization models (Bayesian Personalized Ranking for Matrix Factorization (BPRMF) and Neural Factorization Machines (NFM)) and three knowledge-aware models (Collaborative Knowledge-based Embedding (CKE), Knowledge Graph Attention Network (KGAT) and Knowledge Graph-based Intent Network (KGIN)). 
   
-- **KGIN:** This model combines various relationships within the knowledge graph to understand the intent behind interactions between users and items. The code is available at https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network.
+- **KGIN:** This model combines various relationships within the knowledge graph to understand the intent behind interactions between users and items. The code is available at <a href="[https://github.com/your-repository-link](https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network)">[Link Tex](https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network)t</a>.
 
 - **KGAT:** This model build a collaborative knowledge graph and employs an attentive aggregation mechanism to generate representations for users and items. The code is available at https://github.com/xiangwang1223/knowledge_graph_attention_network.
 
