@@ -15,7 +15,7 @@
 </p>
 
 ## Recommednation models 
-
+<div style="text-align: justify">
 <p align="justify"> To demonstrate the model-agnostic nature of our explanation generation approach, we applied five RS baselines included two factorization models (Bayesian Personalized Ranking for Matrix Factorization (BPRMF) and Neural Factorization Machines (NFM)) and three knowledge-aware models (Collaborative Knowledge-based Embedding (CKE), Knowledge Graph Attention Network (KGAT) and Knowledge Graph-based Intent Network (KGIN)). 
   
 - **KGIN:** This model combines various relationships within the knowledge graph to understand the intent behind interactions between users and items. The code is available at <a href="https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network">https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network</a>.
@@ -29,7 +29,7 @@
 - **BPRMF** Bayesian Personalized Ranking is a widely used collaborative filtering method that only considers the user-item interactions, without utilizing any external knowledge about the users or items. 
 
 </p>
-
+</div>
 ## Code Structure
 <p align="justify"> 
 This section provides an overview of the key files in the repository and their respective roles.</p>
