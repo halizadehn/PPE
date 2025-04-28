@@ -20,7 +20,7 @@
   
 - **KGIN:** This model combines various relationships within the knowledge graph to understand the intent behind interactions between users and items. The code is available at <a href="https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network">https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network</a>.
 
-- **KGAT:** This model build a collaborative knowledge graph and employs an attentive aggregation mechanism to generate representations for users and items. The code is available at https://github.com/xiangwang1223/knowledge_graph_attention_network.
+- **KGAT:** This model build a collaborative knowledge graph and employs an attentive aggregation mechanism to generate representations for users and items. The code is available at <a href="https://github.com/xiangwang1223/knowledge_graph_attention_network">https://github.com/xiangwang1223/knowledge_graph_attention_network</a>.
 
 - **CKE:** This approach combines a collaborative filter (CF) module with knowledge embeddings of items derived from TransR. 
 
