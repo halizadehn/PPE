@@ -4,10 +4,9 @@ import pandas as pd
 data_dir = "Data/"
 rec_dir = "Data/recommendations/"
 
-personality_df = pd.read_csv(data_dir + "Personality/users_personality.csv", index_col=False)
-
 
 def get_user_personality(user_id):
+    personality_df = pd.read_csv(data_dir + "Personality/users_personality.csv", index_col=False)
     result = personality_df.query("user_id==" + str(user_id))
     personality = result.iloc[0].tolist()[1:]
     return personality
