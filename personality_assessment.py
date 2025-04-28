@@ -72,7 +72,7 @@ def personality_assessment():
             content = df.loc[i, "user_text"]
             corpus.append(content)
             users.append(uid)
-    vectorizer = TfidfVectorizer() # vectorizer = CountVectorizer()
+    vectorizer = TfidfVectorizer() 
     term_doc_mtx = vectorizer.fit_transform(corpus).toarray()
     idx2term = vectorizer.get_feature_names_out()
     print(' -- Term-Doc Matrix Created --')
