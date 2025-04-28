@@ -24,7 +24,7 @@
 
 - **CKE:** This approach combines a collaborative filter (CF) module with knowledge embeddings of items derived from TransR. 
 
-- **NFM** This method is a state-of-the-art neural network-based factorization model. The code is available at https://github.com/hexiangnan/neural_factorization_machine. 
+- **NFM** This method is a state-of-the-art neural network-based factorization model. The code is available at <a href="https://github.com/hexiangnan/neural_factorization_machine">https://github.com/hexiangnan/neural_factorization_machine</a>. 
 
 - **BPRMF** Bayesian Personalized Ranking is a widely used collaborative filtering method that only considers the user-item interactions, without utilizing any external knowledge about the users or items. 
 
