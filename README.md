@@ -17,6 +17,8 @@
 - **ratings.dat:** stores the extracted ratings in the format: user_id, movie_id, rating, rating_timestamp. The ratings are scaled from 0 to 10.
   
 </p>
+**Statistics of the dataset**
+<img src="Figures/dataset.JPG" />
 
 ## Recommednation models 
 <div style="text-align: justify">
