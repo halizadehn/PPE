@@ -59,4 +59,4 @@ This section provides an overview of the key files in the repository and their r
 </p>
 <img src="Figures/fidelity across different K.JPG" width="800"/>
 
-
+**Note:** Based on resulrs, knowledge-aware RSs like CKE, KGAT, and KGIN consistently exhibit higher model fidelity than other RS baselines such as BPRMF and NFM across different values of K in the feature-based style,. This observation aligns with the fact that these RSs incorporate item features, such as actor, director, and genre, into their recommendation generation algorithms. This integration further reinforces the support for generating explanations based on these features for recommended items.
