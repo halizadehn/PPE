@@ -2,7 +2,7 @@
 
 <p align="justify">This repository contains the implementation of our proposed approach for generating persuasive explanations in recommender systems (RSs). Our method constructs a persuasion profile for each user and generates persuasion-aware explanations for items recommended by various RS baselines. These explanations are evaluated from an explainability perspective using metrics such as model fidelity. We also incorporate the persuasiveness degree of each explanation to re-rank the recommendation list and assess the impact on recommendation utility. Experimental results on a real-world movie recommendation dataset show that our approach effectively generates persuasive explanations while also improving the utility of the recommendations. </p>
 
-![Description](Figures/overview.eps)
+<img src="Figures/overview.png.JPG" />
 
 
 ## Dataset 
@@ -48,11 +48,11 @@ This section provides an overview of the key files in the repository and their r
 ## Results
 <p align="justify"> To assess the impact of the re-ordering approach on the upper segments of the recommendation list, in addition to the results reported in the paper for K=10, we present results for K=3 and K=5 in Figure 1. A careful examination of these figures reveals consistent improvements, aligning with the findings for K=10. Specifically, for K=3, the re-ordering approach led to an average NDCG improvement of approximately 13.36% and an average MRR improvement of around 14.72%. For K=5, the improvements were slightly smaller but still notable, with an average NDCG improvement of about 8.22% and an average MRR improvement of approximately 11.54%. </p>
   
-<img src="images/re-ordering impact across different K.JPG" width="700"/>
+<img src="Figures/re-ordering impact across different K.JPG" width="700"/>
 <p style="font-size:8px;"><strong><em>Figure 1: Impact of the proposed re-ranking approach on recommendation utility</em></strong></p>
 
 <p align="justify"> Table 1 and Table 2 present the model fidelity and persuasion-based fidelity for the top-3 and top-5 recommendations, evaluated across various explanation styles. The results in these tables align consistently with those for k=10, as reported in the paper, thereby demonstrating the generalizability of the observed findings across different recommendation sets.
 </p>
-<img src="images/fidelity across different K.JPG" width="800"/>
+<img src="Figures/fidelity across different K.JPG" width="800"/>
 
 
