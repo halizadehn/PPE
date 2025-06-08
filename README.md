@@ -15,7 +15,9 @@
 - **items.dat:** contains information about the rated items (i.e., movies), including metadata such as genres.
 
 - **ratings.dat:** stores the extracted ratings in the format: user_id, movie_id, rating, rating_timestamp. The ratings are scaled from 0 to 10.
-  
+
+  **Preprocessing**: First, we preprocessed the dataset by filtering out low frequency users and infrequent items (i.e., lower than 10). After that, we gathered users’ recent tweets from the past year using tweepy. Users with fewer than 100 tweets were excluded. The dataset, after preprocessing, consists of 2, 291 users, 8, 080 movies, 160, 696 ratings, and 1, 013, 140
+tweets. 
   **Dataset statistics after preprocessing:**
 <img src="Figures/dataset.JPG" />
 </p>
