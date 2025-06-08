@@ -44,9 +44,9 @@ This section provides an overview of the key files in the repository and their r
 
 - **[persuasive_explanation_generation.py](persuasive_explanation_generation.py):** This file implements the generation of persuasive explanations, as described in Algorithm 1 of the paper. The approach focuses on creating explanations that align with the most persuasive principles found in the user's persuasion profile.
  
-- **explanation_baselines.py:** This file implements three distinct baselines for explanation generation: rating-based, feature-based, and award-based. Each approach leverages a unique method to generate explanations for recommended items, offering diverse strategies for comparison and evaluation.
+- **[explanation_baselines.py](explanation_baselines.py):** This file implements three distinct baselines for explanation generation: rating-based, feature-based, and award-based. Each approach leverages a unique method to generate explanations for recommended items, offering diverse strategies for comparison and evaluation.
 
-- **metrics.py:** This file implements evaluation metrics, including model fidelity. Additionally, it introduces a new metric, persuasion-based fidelity, which takes into account not only the presence of an explanation but also its persuasive effectiveness in influencing users.
+- **[metrics.py](metrics.py):** This file implements evaluation metrics, including model fidelity. Additionally, it introduces a new metric, persuasion-based fidelity, which takes into account not only the presence of an explanation but also its persuasive effectiveness in influencing users.
 
 
 ## Results
